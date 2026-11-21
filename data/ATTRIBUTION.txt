@@ -1,0 +1,16 @@
+Iris dataset
+Source: UCI Machine Learning Repository
+Creator citation: Fisher, R. (1936). Iris [Dataset].
+DOI: https://doi.org/10.24432/C56C76
+Dataset page: https://archive.ics.uci.edu/dataset/53/iris
+File: https://archive.ics.uci.edu/static/public/53/data.csv
+Retrieved: 2026-11-22 (Asia/Shanghai)
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+SHA256: daaeb5e3e889d07fbdd44544f5a39fe2372a07172e25899d577be0ad74df9e65
+
+The downloaded CSV bytes, column labels and row order are unchanged.
+The training program converts numeric columns to float32 and maps class
+labels to 0, 1, 2 in the order setosa, versicolor, virginica.
+The included CSV is the experiment's fixed version; other software
+distributions may contain different corrected records.

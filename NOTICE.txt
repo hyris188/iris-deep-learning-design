@@ -1,0 +1,14 @@
+Project: 基于深度学习的鸢尾花识别分类
+Course: 《人工智能编程基础》综合设计
+Student: 郝雅蓉
+
+Data is attributed separately in data/ATTRIBUTION.txt under CC BY 4.0.
+Software dependencies retain their respective upstream licenses.
+Teacher-provided course objectives, grading criteria and task descriptions
+are reproduced in the academic report from the supplied course template.
+No additional blanket license is granted to the report or project code.
+
+Experiment results are produced by the accompanying program on the
+included dataset. Text and code preparation used AI assistance; model
+training, evaluation, checks and reproducibility verification were actually
+executed. No teacher grades, signatures or unprovided mentor name are filled.

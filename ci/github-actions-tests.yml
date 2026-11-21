@@ -1,0 +1,15 @@
+# Reference configuration. Copy into .github/workflows/ when the account
+# grants workflow write permission. It is not active in this release.
+name: Reproducibility checks
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: pip
+      - run: pip install -r requirements-lock.txt
+      - run: python -m pytest -q
