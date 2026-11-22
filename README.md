@@ -1,7 +1,5 @@
 # 基于深度学习的鸢尾花识别分类
 
-武汉工程大学《人工智能编程基础》综合设计，2025人工智能（机器人方向）01班。作者：郝雅蓉。
-
 使用 TensorFlow 对花萼长度、花萼宽度、花瓣长度、花瓣宽度四项测量值分类，单位均为 **cm**。输出为 setosa、versicolor 或 virginica；输入数据为数值测量。
 
 ## 报告与下载
@@ -10,8 +8,6 @@
 - [PDF 报告](report/2508050230_郝雅蓉_综合设计报告.pdf)
 - [兼容 DOC 报告](report/2508050230_郝雅蓉_综合设计报告.doc)
 - [发布版本与附件](https://github.com/hyris188/iris-deep-learning-design/releases/latest)
-
-保留学校模板的封面信息、说明、课程目标、毕业要求、成绩评定表和前三项任务要求，完成中英文摘要、四章正文、总结、致谢、参考文献和代码附录。教师评分、签字及未提供的学业导师姓名留空。封面的起止日期是课程规定时间；本次实验实际执行于 **2026-11-22**。
 
 ## 实测结果
 
@@ -53,18 +49,6 @@ python scripts/make_figures.py
 `train` 会更新 `artifacts/`，执行主模型、两项基线、两项仅验证集消融和五个初始化种子的验证实验。后两项不使用测试标签选模型。固定划分下五个种子的验证准确率均值为 92.67%，样本标准差为 1.49 个百分点。这不是交叉验证。
 
 `requirements.txt` 固定主要运行依赖；`requirements-dev.txt` 增加文档生成与检查工具；`requirements-lock.txt` 记录本次完整安装版本。需要复刻完整环境时可使用 `pip install -r requirements-lock.txt`。跨硬件、不同框架版本可能存在数值差异，运行耗时也会变化。
-
-## 重新生成报告
-
-```bash
-python scripts/build_report.py
-/usr/bin/python3 scripts/export_report.py
-```
-
-第一条命令读取 `artifacts/` 和从模板提取的 `report/template_front_matter.json`，生成 DOCX；第二条使用 LibreOffice 更新真实目录页码，并导出 PDF 与 DOC。在 Ubuntu 上第二条需要 `libreoffice-writer`、`python3-uno`，并使用能够导入 `uno` 的系统 Python。仅生成报告时无需重新训练模型。
-
-报告生成会检查四章正文不少于 5000 个汉字、中文摘要不少于 300 个汉字；统计不包括摘要、表格、图题、总结与附录。验证记录位于 `report/validation.json`。标题与正文按模板字号设置，章节另起页，图表按章编号，引用采用上标顺序编码。
-
 ## 成果结构
 
 ```text
